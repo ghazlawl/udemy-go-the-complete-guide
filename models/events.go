@@ -18,7 +18,7 @@ type Event struct {
 /**
  * Saves the event to the database.
  */
-func (event Event) Save() error {
+func (event *Event) Save() error {
 	query := `
 		INSERT INTO events (name, description, location, date_time, user_id)
 		VALUES (?, ?, ?, ?, ?);
@@ -40,6 +40,8 @@ func (event Event) Save() error {
 	}
 
 	id, err := result.LastInsertId()
+
+	// This is only possible because we're referencing a pointer.
 	event.ID = id
 
 	return err

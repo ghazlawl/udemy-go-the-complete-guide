@@ -1,8 +1,9 @@
 POST http://localhost:8080/event
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGV4YW1wbGUuY29tIiwiZXhwIjoxNzU2MzIyMTcyLCJpZCI6Mn0.f1dcDdfOn8Bi9uhu5JZxY8S7I1lk_nlcjEEER2SgLWI
 
 {
-	"name": "Sample Event",
+	"name": "Sample Event 1",
 	"description": "This is a sample event.",
 	"location": "Online",
 	"date_time": "2023-10-10T10:00:00Z"
