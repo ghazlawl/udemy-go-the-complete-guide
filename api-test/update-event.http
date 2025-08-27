@@ -1,5 +1,6 @@
 PUT http://localhost:8080/event/1
 Content-Type: application/json
+Authorization: JWT_TOKEN_GOES_HERE
 
 {
     "name": "Updated Event",
